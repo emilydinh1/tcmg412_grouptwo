@@ -30,7 +30,12 @@ LINKS = (('Dev Team:', 'http://getpelican.com/'),
         ('Matt S.', '#'),
          )
 
-THEME = '/home/emilydinh/pelican-themes/notmyidea-cms'
+THEME = '/home/emilydinh/pelican-themes/pelican-bootstrap3'
+PLUGIN_PATHS = ['/home/emilydinh/grouptwo/pelican-plugins', ]
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+            'extensions': ['jinja2.ext.i18n'],
+            }
 
 
 # Social widget
